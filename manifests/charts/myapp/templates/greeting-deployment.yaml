@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: greeting
-        image: {{ .Values.greeting.image }}:{{ .Values.image.tag }}
+        image: {{ .Values.greeting.image }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: {{ .Values.service.internalPort }}
